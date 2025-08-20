@@ -16,7 +16,7 @@ def download_image_one(url,a):
         for i in range(1, n + 1):
             print(f"正在下载第{i}张图片......")
             if i == n:
-                print('主人，已经被填满了~~~')
+                print('下载完毕')
             save_dir = f'D://漫画/pic{a}'
             os.makedirs(save_dir, exist_ok=True)  # 自动创建目录
             file_path = os.path.join(save_dir, f'{i+count}.jpg')
@@ -38,7 +38,7 @@ def download_image_more(url,a):
         for i in range(1, n + 1):
             print(f"正在下载第{i}张图片......")
             if i == n:
-                print('主人，已经被填满了~~~')
+                print('下载完毕')
             save_dir = f'D://漫画/pic{a}'
             os.makedirs(save_dir, exist_ok=True)#自动创建目录
             file_path = os.path.join(save_dir, f'{i+count}.jpg')
